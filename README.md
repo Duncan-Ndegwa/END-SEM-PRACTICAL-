@@ -1,5 +1,5 @@
-# END-SEM-PRACTICAL-
-=======
+# END-SEM-PRACTICAL
+
 # cdflang_677200
 
 ## Description
@@ -36,4 +36,4 @@ The program generates:
 ## Signature
 
 CDF:3-2-0-0-1-0-2|REG:677200|DOMAIN:Climate|TAG:duwa|IMPL:Python
->>>>>>> f9a94ed (first commit)
+
