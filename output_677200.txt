@@ -1,0 +1,33 @@
+
+===== MAIN PROGRAM =====
+TOKENS: ['let', 'temp', '=', '17', 'let', 'humidity', '=', '12', 'let', 'pressure', '=', '10', 'temp', '=', 'temp', '+', '5', 'if', 'temp', '>', '12', 'func', 'calibrate', '(', 'x', ')', 'map', '(', 'calibrate', ',', 'temp', ')', 'errorVar', '=', '5']
+Condition: TRUE
+Function registered (functional abstraction)
+Map operation executed (functional transformation)
+Error: 'errorVar' not declared (lexical scope violation)
+
+--- SYMBOL TABLE (Lexical Scope) ---
+temp : int | value = 22
+humidity : int | value = 12
+pressure : int | value = 10
+
+===== SYNTAX ERROR TEST =====
+TOKENS: ['let', '=', 'x', '5']
+Syntax Error: list index out of range
+
+--- SYMBOL TABLE (Lexical Scope) ---
+
+===== SCOPE ERROR TEST =====
+TOKENS: ['x', '=', '10']
+Error: 'x' not declared (lexical scope violation)
+
+--- SYMBOL TABLE (Lexical Scope) ---
+
+===== RUNTIME ERROR TEST =====
+TOKENS: ['let', 'a', '=', '10', 'a', '=', 'a', '0']
+Runtime Error: division by zero
+
+--- SYMBOL TABLE (Lexical Scope) ---
+a : int | value = 10
+
+CDF:3-2-0-0-1-0-2|REG:677200|DOMAIN:Climate|TAG:duwa|IMPL:Python
